@@ -160,8 +160,24 @@
         </button>
 
     </form>
-</main>
 
+</main>
+<form id="registerForm" class="checkout-form">
+
+    <button type="submit" class="btn">Зареєструватися</button>
+</form>
+
+<div id="result"></div>
+
+<script>
+document.getElementById('registerForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // не перезавантажує сторінку
+        const name = document.getElementById('fullName').value;
+        const email = document.getElementById('email').value;
+        document.getElementById('result').innerText =
+    `Ви зареєструвалися як ${name}, email: ${email}`;
+});
+</script>
 </body>
 </html>
 ```
