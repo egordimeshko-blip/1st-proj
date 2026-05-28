@@ -58,7 +58,6 @@ legend {
     gap: 10px;
 }
 
-/* Валідація */
 
 .form-group input:invalid:focus {
     border-color: red;
