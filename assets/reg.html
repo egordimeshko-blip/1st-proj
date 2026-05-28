@@ -1,0 +1,167 @@
+```html
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Реєстрація</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">MY PORTFOLIO</div>
+
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="register.html">Реєстрація</a></li>
+        </ul>
+    </nav>
+
+    <div class="user-actions">
+        <button class="btn">Контакти</button>
+    </div>
+</header>
+
+<main>
+    <h2 class="section-title form-title">Створення акаунта</h2>
+
+    <form action="#" method="POST" class="checkout-form">
+
+        <!-- Особисті дані -->
+        <fieldset>
+            <legend>1. Особисті дані</legend>
+
+            <div class="form-group">
+                <label for="fullName">ПІБ:</label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Іванов Іван Іванович"
+                    minlength="5"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@gmail.com"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Телефон:</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    pattern="[\+]\d{12}"
+                    placeholder="+380991234567"
+                    required
+                    title="Формат: +380XXXXXXXXX"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="birthDate">Дата народження:</label>
+
+                <input
+                    type="date"
+                    id="birthDate"
+                    name="birthDate"
+                    required
+                >
+            </div>
+        </fieldset>
+
+        <!-- Тип акаунта -->
+        <fieldset>
+            <legend>2. Тип акаунта</legend>
+
+            <div class="form-radio">
+                <input
+                    type="radio"
+                    id="frontend"
+                    name="direction"
+                    value="frontend"
+                    checked
+                >
+
+                <label for="frontend">Frontend</label>
+            </div>
+
+            <div class="form-radio">
+                <input
+                    type="radio"
+                    id="backend"
+                    name="direction"
+                    value="backend"
+                >
+
+                <label for="backend">Backend</label>
+            </div>
+
+            <div class="form-radio">
+                <input
+                    type="radio"
+                    id="design"
+                    name="direction"
+                    value="design"
+                >
+
+                <label for="design">UI/UX Design</label>
+            </div>
+        </fieldset>
+
+        <!-- Додаткова інформація -->
+        <fieldset>
+            <legend>3. Додаткова інформація</legend>
+
+            <div class="form-group">
+                <label for="about">Коротко про себе:</label>
+
+                <textarea
+                    id="about"
+                    name="about"
+                    rows="5"
+                    placeholder="Розкажіть коротко про себе..."
+                ></textarea>
+            </div>
+
+            <div class="checkbox-group">
+                <input
+                    type="checkbox"
+                    id="agree"
+                    name="agree"
+                    required
+                >
+
+                <label for="agree">
+                    Я погоджуюсь з правилами сайту
+                </label>
+            </div>
+        </fieldset>
+
+        <button type="submit" class="btn">
+            Зареєструватися
+        </button>
+
+    </form>
+</main>
+
+</body>
+</html>
+```
